@@ -1,0 +1,26 @@
+.keyword-table-container {
+  td[data-column="autoSuggestions"] {
+    min-width: 800px;
+    padding: 0;
+    
+    textarea {
+      width: 100%;
+      min-height: 60px;
+      padding: 8px;
+      font-size: 12px;
+      line-height: 1.4;
+      font-family: monospace;
+      border: 1px solid #e2e8f0;
+      border-radius: 4px;
+      resize: vertical;
+      white-space: pre-wrap;
+      word-break: break-word;
+      
+      &:focus {
+        outline: none;
+        border-color: #3b82f6;
+        box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
+      }
+    }
+  }
+} 

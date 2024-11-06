@@ -1,0 +1,51 @@
+.keyword-table {
+  td {
+    vertical-align: top;
+    padding: 12px;
+    
+    &:has(.auto-suggest-cell) {
+      max-width: none;
+      width: auto;
+      background: #ffffff;
+    }
+  }
+}
+
+.auto-suggest-cell {
+  min-width: 600px;
+  padding: 8px;
+  
+  textarea {
+    font-family: -apple-system, system-ui, sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    border-color: #e2e8f0;
+    transition: all 0.2s;
+    
+    &:hover {
+      border-color: #cbd5e1;
+    }
+    
+    &:focus {
+      border-color: #3b82f6;
+    }
+  }
+}
+
+/* Ajustes na tabela para comportar o conteúdo */
+.keyword-table {
+  table-layout: fixed;
+  
+  td {
+    vertical-align: top;
+    
+    &:has(.auto-suggest-cell) {
+      width: 600px;
+      max-width: 600px;
+      white-space: normal;
+    }
+  }
+} 

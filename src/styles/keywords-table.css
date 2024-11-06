@@ -1,0 +1,71 @@
+.keywords-table-wrapper {
+  /* Garante que a tabela mantém sua estrutura */
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  
+  /* Container para scroll horizontal se necessário */
+  overflow-x: auto;
+  white-space: nowrap;
+  
+  /* Estilização básica */
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.auto-suggest-wrapper {
+  /* Container para a célula de auto suggest */
+  min-width: 600px;
+  padding: 8px;
+}
+
+.auto-suggest-textarea {
+  /* Estilização do textarea */
+  width: 100%;
+  min-height: 80px;
+  padding: 8px;
+  font-size: 13px;
+  line-height: 1.5;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  resize: none;
+  
+  /* Melhor visualização do texto */
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-family: -apple-system, system-ui, sans-serif;
+  
+  /* Estados */
+  &:hover {
+    border-color: #cbd5e1;
+  }
+  
+  &:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 2px rgba(59,130,246,0.1);
+  }
+}
+
+/* Estilos para as células normais */
+td {
+  vertical-align: top;
+  border-bottom: 1px solid #e2e8f0;
+  
+  &:first-child {
+    font-weight: 500;
+  }
+}
+
+/* Estilos para o cabeçalho */
+th {
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 10;
+  padding: 12px;
+  font-weight: 600;
+  color: #1f2937;
+  border-bottom: 2px solid #e5e7eb;
+} 
